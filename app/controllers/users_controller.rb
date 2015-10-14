@@ -4,7 +4,4 @@ class UsersController < ApplicationController
 
   end
 
-  def user_params
-    require(:user).permit(:email, :password)
-  end
 end

@@ -1,6 +1,7 @@
 class SiteController < ApplicationController
-  def index
-  end
 
+  def index
+    # @resource_name = resource_name
+  end
 
 end

@@ -3,3 +3,4 @@ Rails.application.routes.draw do
   get '/dashboard' => 'site#dashboard'
   get '/edit' => 'site#edit'
 end
+

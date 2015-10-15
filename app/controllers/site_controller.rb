@@ -9,4 +9,7 @@ class SiteController < ApplicationController
 
   def edit
   end
+
+  def create_profile
+  end
 end

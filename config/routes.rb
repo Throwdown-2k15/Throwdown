@@ -9,6 +9,7 @@ Rails.application.routes.draw do
 
   get '/dashboard' => 'site#dashboard'
   get '/edit' => 'site#edit'
+  get '/create_profile' => 'site#create_profile'
 
 end
 

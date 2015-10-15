@@ -1,0 +1,43 @@
+
+<h2>Sign up</h2>
+
+<form class="new_user" id="new_user" action="/users" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="iPf6cuDQdQdgxa89nG1AY+auVi1CbNDBdgP+6BF8zkAlq9FnRtKEMZ7v7V7HYrYxxkIoX2pjGXKipJ/aMlkyxg==" />
+
+
+  <div class="field">
+    <label for="username">Alias</label><br />
+    <input autofocus="autofocus" type="username" value="" name="user[username]" id="username" />
+  </div>
+
+  <div class="field">
+    <label for="location">Location</label><br />
+    <input autofocus="autofocus" type="location" value="" name="user[location]" id="location" />
+  </div>
+
+  <div class="field">
+    <label for="bio">Bio</label><br />
+    <input autofocus="autofocus" type="bio" value="" name="user[bio]" id="bio" />
+  </div>
+
+  <div class="field">
+    <label for="user_email">Email</label><br />
+    <input autofocus="autofocus" type="email" value="" name="user[email]" id="user_email" />
+  </div>
+
+  <div class="field">
+    <label for="user_password">Password</label>
+    <em>(8 characters minimum)</em>
+    <br />
+    <input autocomplete="off" type="password" name="user[password]" id="user_password" />
+  </div>
+
+  <div class="field">
+    <label for="user_password_confirmation">Password confirmation</label><br />
+    <input autocomplete="off" type="password" name="user[password_confirmation]" id="user_password_confirmation" />
+  </div>
+
+  <div class="actions">
+    <input type="submit" name="commit" value="Sign up" />
+  </div>
+</form>
+  <a href="/users/sign_in">Log in</a><br />

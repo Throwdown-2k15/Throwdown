@@ -1,4 +1,5 @@
 class TdownsController < ApplicationController
+  before_filter :authenticate_user!
 
   def index
     @tdowns = Tdown.all

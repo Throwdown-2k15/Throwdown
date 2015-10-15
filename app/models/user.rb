@@ -8,5 +8,5 @@ class User < ActiveRecord::Base
 
   has_many :commitments
   has_many :tdowns, through: :commitments
-  belongs_to :tdowns
+
 end

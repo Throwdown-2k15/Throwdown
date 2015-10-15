@@ -3,9 +3,10 @@ Rails.application.routes.draw do
   root 'site#index'
 
   devise_for :users
-  resources :users
+  resources :users, :except => [:show]
+  resources :tdowns
 
-  get 'users/:id', to: 'users#show', as: 'dashboard'
+  get 'users/:id', to: 'users#dashboard', as: 'dashboard'
 
   get '/dashboard' => 'site#dashboard'
   get '/edit' => 'site#edit'

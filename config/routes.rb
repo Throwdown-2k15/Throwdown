@@ -6,4 +6,8 @@ Rails.application.routes.draw do
 
   get 'users/:id', to: 'users#show', as: 'dashboard'
 
+  get '/dashboard' => 'site#dashboard'
+  get '/edit' => 'site#edit'
+
 end
+

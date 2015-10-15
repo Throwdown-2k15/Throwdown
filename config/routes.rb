@@ -4,10 +4,9 @@ Rails.application.routes.draw do
 
   devise_for :users
   resources :users, :except => [:show]
+  resources :tdowns
 
-  get 'users/:id', to: 'users#dashboard', as: 'dashboard'
-
-  get '/dashboard' => 'site#dashboard'
+  get '/dashboard' => 'users#dashboard'
   get '/edit' => 'site#edit'
   get '/create_profile' => 'site#create_profile'
 

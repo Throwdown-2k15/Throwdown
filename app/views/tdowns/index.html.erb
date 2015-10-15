@@ -1,0 +1,14 @@
+<h1> Throwdowns</h1>
+
+
+
+  <% @tdowns.each do |tdowns| %>
+
+      <h2><%= tdowns.name %></h2>
+    <ul>
+      <li><%= "#{tdowns.time.hour}:#{tdowns.time.min}" %></li>
+      <li><%= "Location: #{tdowns.location}" %></li>
+      <li><%= "Details: #{tdowns.details}" %></li>
+    </ul>
+  <% end %>
+

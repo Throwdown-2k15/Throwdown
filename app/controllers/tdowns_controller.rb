@@ -11,6 +11,8 @@ class TdownsController < ApplicationController
   end
 
   def create
+    Tdown.create(tdown_params)
+    redirect_to dashboard_path(current_user)
   end
 
   def destroy
@@ -19,5 +21,9 @@ class TdownsController < ApplicationController
   def edit
   end
 
+  private
+  def tdown_params
+    params.require(:tdown).permit(:name, :time, :location, :details,:startx, :starty, :finishx, :finishy)
+  end
 end
 

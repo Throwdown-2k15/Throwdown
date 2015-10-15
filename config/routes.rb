@@ -6,9 +6,7 @@ Rails.application.routes.draw do
   resources :users, :except => [:show]
   resources :tdowns
 
-  get 'users/:id', to: 'users#dashboard', as: 'dashboard'
-
-  get '/dashboard' => 'site#dashboard'
+  get '/dashboard' => 'users#dashboard'
   get '/edit' => 'site#edit'
 
 end

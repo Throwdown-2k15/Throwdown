@@ -12,7 +12,7 @@ class TdownsController < ApplicationController
   end
 
   def create
-    Tdown.create(tdown_params)
+    @tdown = Tdown.create(tdown_params.merge(user: current_user))
     redirect_to dashboard_path(current_user)
   end
 

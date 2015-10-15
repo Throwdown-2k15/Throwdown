@@ -18,7 +18,8 @@ RSpec.describe TdownsController, type: :controller do
     let(:post_data) {post :create, tdown: attributes}
 
     context "when logged in" do
-      before { sign_in FactoryGirl.create(:user) }
+      let(:user) { FactoryGirl.create(:user) }
+      before { sign_in user }
 
       context "with valid attributes" do
 
@@ -27,7 +28,10 @@ RSpec.describe TdownsController, type: :controller do
         end
 
         it 'redirects to the dashboard'
-        it 'associates the throwdown with current_user'
+        it 'associates the throwdown with current_user' do
+          post_data
+          expect(assigns(:tdown).user.id).to eq(user.id)
+        end
       end
       context "with invalid attributes" do
         it 'sets a flash error message'

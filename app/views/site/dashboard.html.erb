@@ -1,1 +1,9 @@
-This is where it should be pointing
+<% if user_signed_in? %>
+  <div>Signed in as... <%= current_user.email %></div>
+<% end %>
+
+<p>Leaderboard here</p>
+<a href="/tdowns/new">Create Throwdown</a><br />
+<a href="/">**** TO ADD **** All Throwdowns</a><br />
+<a href="/tdowns">My Throwdowns</a><br />
+<p>Past TD's</p>

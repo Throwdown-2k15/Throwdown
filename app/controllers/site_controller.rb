@@ -6,7 +6,7 @@ class SiteController < ApplicationController
   def dashboard
   end
 
-  def edit
+  def edit_profile
   end
 
 

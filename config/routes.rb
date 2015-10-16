@@ -6,8 +6,7 @@ Rails.application.routes.draw do
   resources :users, :except => [:show]
   resources :tdowns
 
-  get '/dashboard' => 'site#dashboard'
-  get '/edit' => 'site#edit'
+  get '/dashboard' => 'users#dashboard'
   get '/create_profile' => 'site#create_profile'
 
 end

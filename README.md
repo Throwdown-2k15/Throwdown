@@ -1,2 +1,2 @@
 # Throwdown
-An illegal street racing meetup app
+A street racing meetup app
